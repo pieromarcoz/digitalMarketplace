@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import {cn} from "@/lib/utils";
 import Navbar from '@/components/Navbar';
+import { Analytics } from '@vercel/analytics/react';
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -25,6 +27,7 @@ export default function RootLayout({
             <Navbar/>
             <div className={'flex-grow flex-1'}>{children}</div>
         </main>
+        <Analytics />
       </body>
     </html>
   )
