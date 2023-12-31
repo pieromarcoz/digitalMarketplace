@@ -26,7 +26,7 @@ const Navbar = () => {
                                     {user ? null : 
                                         <Link className={buttonVariants({
                                             variant: 'ghost',
-                                        })} href={'/'}>Sign in</Link>
+                                        })} href={'/sign-up'}>Sign in</Link>
                                     }
                                     {user ? null : (
                                         <span className="h-6 w-px bg-gray-200" aria-hidden="true"/>
