@@ -14,6 +14,7 @@ import {
     Text,
     render,
 } from '@react-email/components'
+import * as React from 'react'
 import {formatPrice} from "../../lib/utils";
 import {format} from 'date-fns'
 interface ReceiptEmailProps  {
