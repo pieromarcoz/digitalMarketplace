@@ -14,7 +14,7 @@ import {toast} from "sonner";
 import {ZodError} from "zod";
 import {useRouter, useSearchParams} from "next/navigation";
 
-const page = () => {
+const Page = () => {
     const searchParams = useSearchParams()
     const router = useRouter()
     const isSeller = searchParams.get("as") === 'seller'
@@ -69,7 +69,7 @@ const page = () => {
                             variant: 'link',
                             className: 'gap-1.5'
                         })} href={'/sign-up'}>
-                            Don't have an account?
+                            Don&apos;t have an account?
                             <ArrowRight className={'h-4 w-4'}/>
                         </Link>
                     </div>
@@ -119,4 +119,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

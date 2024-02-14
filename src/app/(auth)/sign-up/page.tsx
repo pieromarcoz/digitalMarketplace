@@ -1,4 +1,4 @@
-"use client";
+'use client'
 import { Icons } from "@/components/Icons";
 import {Button, buttonVariants} from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -14,8 +14,7 @@ import {toast} from "sonner";
 import {ZodError} from "zod";
 import {useRouter} from "next/navigation";
 
-const page = () => {
-
+const Page = () => {
     const {
         register,
         handleSubmit,
@@ -92,4 +91,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;
