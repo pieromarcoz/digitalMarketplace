@@ -8,11 +8,22 @@ const nextConfig = {
                 port: '3000',
                 protocol: 'http'
             }
-        ]*/
-        domains: [
-            'localhost',
-            'digitalhippo-pieromg.up.railway.app',
         ]
+        domains: ['localhost',
+            'digitalmarketplace-pieromg.up.railway.app'
+        ]
+        */
+        remotePatterns: [
+            {
+                protocol: "http",
+                hostname: "localhost",
+            },
+            {
+                protocol: "https",
+                hostname: "digitalhippo-pieromg.up.railway.app",
+            },
+        ],
+
     }
 }
 
