@@ -30,7 +30,7 @@ const Navbar = async () => {
                                     {user ? null : 
                                         <Link className={buttonVariants({
                                             variant: 'ghost',
-                                        })} href={'/sign-up'}>Sign in</Link>
+                                        })} href={'/sign-in'}>Sign in</Link>
                                     }
                                     {user ? null : (
                                         <span className="h-6 w-px bg-gray-200" aria-hidden="true"/>
@@ -38,7 +38,7 @@ const Navbar = async () => {
                                     {user ? <UserAccountNav user={user}/> :
                                         <Link className={buttonVariants({
                                             variant: 'ghost',
-                                        })} href={'/'}>Create account</Link>
+                                        })} href={'/sign-up'}>Create account</Link>
                                         
                                     }
                                     {user ? (
