@@ -11,7 +11,7 @@ const nextConfig = {
         ]*/
         domains: [
             'localhost',
-            'digitalmarketplace-pieromg.up.railway.app',
+            'digitalhippo-pieromg.up.railway.app',
         ]
     }
 }
