@@ -6,6 +6,7 @@ import Navbar from '@/components/Navbar';
 import { Analytics } from '@vercel/analytics/react';
 import Providers from "@/components/Providers";
 import {Toaster} from "sonner";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -34,6 +35,7 @@ export default function RootLayout({
         <Toaster position={'top-center'} richColors/>
         <Analytics />
       </body>
+      <GoogleAnalytics gaId="G-V4N779ENC3" />
     </html>
   )
 }
